@@ -1,0 +1,949 @@
+* {  
+	font-family: 'Montserrat', sans-serif; 
+	font-size: 14px; 
+	color: #333333;
+	-ms-overflow-style: none; 
+}
+
+h1,h2,h3,h4 { 
+	font-weight: 800; 
+}
+
+.btn { 
+	clear: both; 
+	text-decoration:  none;
+	display: inline-block;
+	color: #ffffff;
+	-webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+	min-width: 150px; 
+	margin-top: 20px; 
+	background: #da0a40; 
+	border: solid #da0a40 1px; 
+	padding: 10px 20px; 
+	text-align: center; 
+	border-radius: 40px; 
+	margin-right: 5px;
+	margin-left: 5px;
+}
+h1 { 
+    font-size: 60px;
+	font-family: 'Audiowide', cursive;
+}
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}  
+
+.input_text {
+	display: block;
+	width: 94%;
+	padding: 8px 10px;
+	color: #333333;
+	border: solid #afafaf 1px;
+}
+
+#emailHelp {
+	font-size: 12px;
+}
+
+#privacy-policy{
+	float: left;
+}
+
+
+
+input::placeholder {
+	
+	color: #333333 !important;
+	font-weight: 400 !important;
+
+}
+
+label { 
+	margin: 16px 0px 6px;
+	display: block; 
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.img-fluid { 
+	max-width: 100%;
+}
+
+.btn:hover { 
+	background: #541d61; 
+	border: solid #541d61 1px; 
+}
+
+a { 
+	text-decoration: none;
+}
+
+body { 
+	width: 100%; margin: 0px;
+}
+
+
+.container-fluid {
+	display: inline-block;
+	width: 100%;
+}
+.container {
+	display: block;
+	width: 75%;
+	margin: 0px auto; 
+	padding: 0px 15px;
+}
+
+/* HEADER -------------------------------------------------------*/
+
+header { 
+	background: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding: 20px 0px 30px; /*Te añade 20px para arriba y para abajo y 0 para los lados*/
+	-webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.24);
+	box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.24);
+}
+
+header .logo {
+	margin-top: 5px;
+}
+.capaLogo-lg {
+	width: 20%;
+	display: inline-block;   /* CUANDO PONEMOS WIDTH TENEMOS QUE PONER UN INLINE*/
+	float: left;
+}
+.capaLogo-sm { 
+	display: none; 
+	float: left;
+}
+
+.menuPrincipal {
+	width: 58%;
+    display: block;
+    float: left;
+    padding-right: 20px;
+
+}
+
+.bloqueRedes {
+	width: 19%;
+	display: inline-block;
+	text-align: right;
+}
+
+.red {
+	filter: brightness(0.7) !important;
+	margin-top: 8px;
+	margin-left: 10px !important;
+}
+.red:hover{
+	filter: brightness(0.4) !important;
+}
+
+.menuPrincipal ul {
+	float: left;
+	padding-left: 0px;
+	display: block;
+	margin-left: 40px;
+	margin-bottom: 0px;
+	margin-top: 11px;
+}
+
+.menuPrincipal ul li { 
+	display: inline-block; 
+	left: 0;
+	list-style: none;
+	border-right: solid 1px #333333;
+}
+.menuPrincipal ul li:last-child { 
+	border-right: solid 0px #333333;
+}
+
+.menuPrincipal ul li a{
+	display: inline-block;
+	padding: 4px 15px;
+	font-weight: 800;
+	font-size: 14px;
+	color: #541d61;
+} 
+
+.menuPrincipal ul li a:hover{
+	color: #da0a40;
+	text-decoration: none;
+} 
+
+
+
+@media (max-width: 768px) {
+
+	.menuPrincipal .navbar { 
+		padding: 0px !important;
+	}
+
+	.menuPrincipal ul li {
+	    display: block;
+	    float: right;
+	    width: 100%;
+	    text-align: right;
+	}
+
+	.capaLogo-lg { 
+		display: none; 
+	}
+
+	.capaLogo-sm { 
+		display: inline-block; 
+	}
+
+	.contenido { 
+		width: 85% !important; 
+		top: 20% !important; 
+		
+
+	}
+
+	#cabecera img { 
+		width: 186% !important; 
+		max-width: inherit; 
+	}
+
+	#banner img { 
+		width: 120% !important; 
+		max-width: inherit; 
+	}
+
+	#contacto form { 
+		width: 90% !important; 
+	}
+
+	footer a { 
+		margin-top: 20px !important; 
+	}
+
+	.producto { 
+		width: 100% !important; 
+		height: 198px !important; 
+	}
+
+	.producto:last-child { 
+		margin-bottom: 0px !important;
+	}
+
+	.servicio:last-child { 
+		margin-bottom: 0px !important;
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	#cabecera img { 
+		width: 239% !important; 
+		max-width: inherit; 
+	}
+
+	.servicio { width: 90% !important; min-width: inherit !important; padding: 30px !important;}
+
+	#banner img { 
+		width: 163% !important; 
+		max-width: inherit; 
+	}
+
+	#banner .contenido {
+	    top: 12% !important;
+	}
+
+	#productos h2 {
+    	font-size: 20px;
+	}
+
+}
+
+/* .........IMAGEN CABECERA -------------------------------------------------------*/
+/*...FORMULARIO..........................*/
+.text_wrapper {
+	float: left;
+	width: 57%;
+	margin-top: 125px;
+}
+
+.formulario {
+	float: right;
+	width: 373px;
+	display: block;
+	padding-top: 50px;		
+}
+select {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+}
+
+#cabecera { 
+	position: relative; 
+	height: 700px; 
+	overflow: hidden; 
+	background: url(../img/contacto-bg.png);
+}
+
+#cabecera img { 
+	filter: brightness(50%); 
+	width: 100%; 
+}
+
+.contenido { 
+	width: 100%;
+	display: inline-block; 
+	clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 53% 95%, 50% 100%, 47% 95%, 0 95%);
+	background: url(../img/set-up-pro.jpg) no-repeat;
+	background-size: cover;
+	height: 700px;
+}
+.contenido2 { 
+	width: 65%; 
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+    top: 50px;
+	margin: auto; 
+	z-index: 300;
+	padding: 0px 15px;
+	text-align: center;
+}
+
+.contenido h1,
+.contenido2 h1,
+.contenido h2,
+.contenido2 h2,
+.contenido p,
+.contenido2 p { 
+	color: #ffffff; 
+}
+.contenido h1,
+.contenido2 h1{ 
+	font-size: 51px !important;
+	line-height: 56px;
+	margin-bottom: 20px;
+}
+.contenido p,
+.contenido2 p { 
+	font-size: 22px !important;
+}
+
+
+/* SECCIÓN SERVICIOS -------------------------------------------------------*/
+
+.contenedor-flex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.servicio { 
+	width: 24%;
+	margin-bottom: 40px;
+	min-width: 250px;
+	background: #ffffff; 
+	min-height: 342px; 
+	padding: 38px; 
+	-webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+	box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.16);
+}
+
+.servicio span.num {
+	font-family: 'Audiowide', cursive;
+	font-size: 50px;
+	color: #a77784;
+	margin-right: 40px;
+	display: inline-block;
+}
+.servicio .barraTitulo {
+	border-bottom: solid 2px #a77784;
+	width: 50%;
+	display: inline-block;
+}
+
+.servicio h3 { 
+	margin-bottom: 20px; 
+	text-transform: uppercase; 
+	font-size: 18px; 
+	letter-spacing: 2px;
+	color: #553f5a ;
+	margin-top: 32px;
+}
+
+p.servicio-text {
+    min-height: 132px;
+}
+
+.label-precio { 
+	margin-bottom: 0px; 
+}
+
+.precio { 
+	color: #da0a40; 
+	font-weight: 800; 
+	display: block;
+	font-size: 25px; 
+}
+
+/*..............................................................carousel...........................................................*/
+/*
+@keyframes tonext {
+	75% {
+	  left: 0;
+	}
+	95% {
+	  left: 100%;
+	}
+	98% {
+	  left: 100%;
+	}
+	99% {
+	  left: 0;
+	}
+  }
+  
+  @keyframes tostart {
+	75% {
+	  left: 0;
+	}
+	95% {
+	  left: -300%;
+	}
+	98% {
+	  left: -300%;
+	}
+	99% {
+	  left: 0;
+	}
+  }
+  
+  @keyframes snap {
+	96% {
+	  scroll-snap-align: center;
+	}
+	97% {
+	  scroll-snap-align: none;
+	}
+	99% {
+	  scroll-snap-align: none;
+	}
+	100% {
+	  scroll-snap-align: center;
+	}
+  }
+  
+  .slider { 
+	  margin-top: 50px; 
+  }
+  
+  
+  *::-webkit-scrollbar {
+	width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+	background: transparent;
+	border: none;
+  }
+  
+  
+  .carousel ol, .carousel li {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+  }
+  
+  .carousel {
+	  margin-top: 20px;
+	  position: relative;
+	  border: none;
+	  outline: 0;
+	  width: 100%;
+	  height: 528px;
+  }
+  
+  .carousel__viewport {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  display: flex;
+	  padding: 0px;
+	  overflow-x: scroll;
+	  counter-reset: item;
+	  scroll-behavior: smooth;
+	  scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+	  position: relative;
+	  flex: 0 0 100%;
+	  width: 100%;
+	  counter-increment: item;
+	  border: none;
+	  outline: 0;
+  }
+  
+  
+  #carousel__slide1{
+	  background: url("../img/slide1.jpg") no-repeat; 
+	  background-size: cover;
+  }
+  #carousel__slide2{
+	  background: url("../img/slide2.jpg") no-repeat; 
+	  background-size: cover;
+  }
+  #carousel__slide3{
+	  background: url("../img/slide3.jpg") no-repeat;
+	  background-size: cover;
+  }
+  #carousel__slide4{
+	  background: url("../img/slide4.jpg") no-repeat;
+	  background-size: cover;
+  }
+  
+  .carousel__snapper {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+  }
+  
+  @media (hover: hover) {
+		.carousel__snapper {
+		  animation-name: tonext, snap;
+		  animation-timing-function: ease;
+		  animation-duration: 4s;
+		  animation-iteration-count: infinite;
+		}
+  
+		.carousel__slide:last-child .carousel__snapper {
+		  animation-name: tostart, snap;
+		}
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+		.carousel__snapper {
+		  animation-name: none;
+		}
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+		animation-name: none;
+  }
+  
+  .carousel__navigation {
+	  position: absolute;
+	  right: 0;
+	  bottom: 13%;
+	  left: 0;
+	  text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+	  display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+	  display: inline-block;
+	  width: 15px;
+	  height: 15px;
+	  background-color: #ffffff;
+	  opacity: 0.6;
+	  background-clip: content-box;
+	  border: 2px solid transparent;
+	  border-radius: 50%;
+	  font-size: 0;
+	  transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+	  position: absolute;
+	  top: 0;
+	  margin-top: 14rem;
+	  width: 40px;
+	  height: 40px;
+	  border-radius: 50%;
+	  font-size: 0;
+	  outline: 0;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+	  left: 26px;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+	  right: 26px;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+	  content: '';
+	  z-index: 1;
+	  background-color: #541d61;
+	  background-size: 15px 15px;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  color: #fff;
+	  font-size: 14px;
+	  line-height: 16px;
+	  text-align: center;
+	  pointer-events: none;
+  }
+  
+  .carousel::before {
+	  background-image: url("../img/left-arrow.png");
+  }
+  
+  .carousel::after {
+	  background-image: url("../img/right-arrow.png");
+  }
+  
+  @media (max-width: 768px) {
+	  .carousel {
+		  position: relative;
+		  width: 100%;
+		  height: 250px;
+		  filter: drop-shadow(0 0 10px #0003);
+	  }
+  }
+*/
+/* SECCIÓN PRODUCTOS -------------------------------------------------------*/
+
+#productos,
+
+#servicios { 
+	padding: 50px 0px; 
+}
+
+.producto { 
+	width: 23%;
+	max-width: 316px;
+	height: 150px; 
+	overflow: hidden; 
+	margin-bottom: 30px; 
+}
+
+.producto img { 
+	max-width: 133%;
+	width: 105%;
+}
+
+#productos h2 { 
+	text-align: center; 
+	text-transform: uppercase; 
+	margin-bottom: 40px; 
+	font-size: 23px; 
+	letter-spacing: 2px;
+}
+/* Efecto zoom*/
+img.zoom {
+    width: 350px;
+    height: 200px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@media (min-width: 2430px) {
+	.producto {
+   	 	max-width: 360px;
+    	height: 240px;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 1420px) {
+	.producto {
+		width: 45%;
+		height: 130px; 
+	}
+
+}
+
+/* Estilos del slider */
+
+/* Slider First */
+
+.sliderwrap {
+	padding: 30px 0;
+  }
+  
+  .sliderwrap a {
+	cursor: pointer;
+  }
+  
+  .sliderwrap h2 {
+	font-size: 30px;
+	line-height: 1.5;
+	text-transform: capitalize;
+	padding-bottom: 10px;
+	font-weight: normal;
+  }
+  
+  #slider {
+	width: 1024px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto 50px auto;
+	height: 400px;
+  }
+  
+  #slider ul {
+	position: absolute;
+  }
+  
+  #slider li {
+	float: left;
+	width: 1024px;
+	background-color: #c6c6c6;
+  }
+  
+  #slider .nextarrow,
+  #slider .prevarrow {
+	position: absolute;
+	top: 200px;
+	font-size: 30px;
+	text-decoration: none;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 5px;
+	z-index: 2;
+	height: 30px;
+	width: 20px;
+	line-height: 24px;
+	margin-top: -20px;
+  }
+  
+  #slider .prevarrow {
+	left: 0;
+  }
+  
+  #slider .nextarrow {
+	right: 0;
+  }
+  
+  #slider .nextarrow:hover,
+  #slider .prevarrow:hover {
+	background: #ff6138;
+	color: #fff;
+  }
+  
+  
+  /* Slider2 css here */
+  
+  .sliderblock {
+	margin-bottom: 20px;
+  }
+  
+  #slider2 {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1024px;
+	height: 400px;
+	text-align: center;
+  }
+  
+  #slider2 ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 400px;
+  }
+  
+  #slider2 ul li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 1024px;
+	height: 400px;
+  }
+  
+  #slider2 .prevarrow2,
+  #slider2 .nextarrow2 {
+	position: absolute;
+	top: 50%;
+	z-index: 999;
+	display: block;
+	width: 50px;
+	height: 22px;
+	padding: 14px 0;
+	margin-top: -25px;
+	background: #2a2a2a;
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	opacity: 0.8;
+	cursor: pointer;
+  }
+  
+  #slider2 .prevarrow2:hover,
+  #slider2 .nextarrow2:hover {
+	opacity: 1;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+  }
+  
+  #slider2 .nextarrow2 {
+	right: 0;
+  }
+  
+  #slider2 .nextarrow2:hover,
+  #slider2 .prevarrow2:hover {
+	background: #ff6138;
+	color: #fff !important;
+  }
+
+  .slider h2 { 
+  	margin-top: 50px; 
+  	margin-bottom: 0px;
+  	margin-left: 25px;
+  }
+/* SECCIÓN BANNER NEWSLETTER -------------------------------------------------------*/
+
+#banner { 
+	position: relative; 
+	height: 300px; 
+	overflow: hidden; 
+}
+
+#banner .contenido h2,
+#banner .contenido p { 
+	text-align: center; 
+}
+
+/* SECCIÓN CONTACTO -------------------------------------------------------*/
+
+#banner .contenido a {
+	display: table;
+    margin: auto;
+}
+
+
+
+#servicios { 
+	background: url(../img/contacto-bg.png) ; 
+	/* background-position: center;
+	background-size: cover; 
+	background-repeat: no-repeat;              Para imagenes de fondo que ocupen todo el ancho y no se repitan y esten centradas   */
+}
+
+#servicios h2 { 
+	text-align: center; 
+	margin-bottom: 30px; 
+	text-transform: uppercase; 
+	font-size: 23px; 
+}
+
+/* FOOTER O PIE DE PÁGINA -------------------------------------------------------*/
+
+footer { 
+	background: #541d61; 
+	padding: 30px 0px;  
+	display: inline-block;
+    width: 100%;
+}
+.col-md-10 {
+	width: 70%;
+	display: inline-block;
+	float: left;
+}
+.col-md-2 {
+	width: 30%;
+	display: inline-block;
+	float: right;
+	text-align: right;
+}
+
+.youtube { 
+	filter: brightness(20); 
+	background: url(../img/youtube.png); 
+	background-size: 25px; 
+	height: 25px; 
+	margin-left: 5px; 
+	width: 25px; 
+	display: inline-block;  
+}
+
+.facebook { 
+	filter: brightness(20); 
+	background: url(../img/facebook.png); 
+	background-size: 25px; 
+	height: 25px; 
+	margin-left: 5px; 
+	width: 25px; 
+	display: inline-block;  
+}
+
+.twitter { 
+	filter: brightness(20); 
+	background: url(../img/twitter.png); 
+	background-size: 25px; 
+	height: 25px; 
+	margin-left: 5px; 
+	width: 25px; 
+	display: inline-block;  
+}
+
+.linkedin { 
+	filter: brightness(20); 
+	background: url(../img/linkedin.png); 
+	background-size: 25px; 
+	height: 25px; 
+	margin-left: 5px; 
+	width: 25px; 
+	display: inline-block;  
+}
+
+footer span { 
+	font-size: 12px; 
+	color: #ffffff; 
+	margin-right: 20px; 
+	padding-top: 6px; 
+	display: inline-block; 
+}
+
+footer span strong 	{
+	font-size: 12px; 
+	color: #ffffff; 
+}
+
+
